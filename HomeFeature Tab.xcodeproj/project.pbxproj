@@ -13,6 +13,7 @@
 		10A24EB41E65F54B00C338EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A24EB21E65F54B00C338EE /* Main.storyboard */; };
 		10A24EB61E65F54B00C338EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A24EB51E65F54B00C338EE /* Assets.xcassets */; };
 		10A24EB91E65F54B00C338EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A24EB71E65F54B00C338EE /* LaunchScreen.storyboard */; };
+		10A24EC11E660D7D00C338EE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A24EC01E660D7D00C338EE /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		10A24EB51E65F54B00C338EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A24EB81E65F54B00C338EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10A24EBA1E65F54B00C338EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10A24EC01E660D7D00C338EE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				10A24EB51E65F54B00C338EE /* Assets.xcassets */,
 				10A24EB71E65F54B00C338EE /* LaunchScreen.storyboard */,
 				10A24EBA1E65F54B00C338EE /* Info.plist */,
+				10A24EC01E660D7D00C338EE /* TableViewCell.swift */,
 			);
 			path = "HomeFeature Tab";
 			sourceTree = "<group>";
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					10A24EA81E65F54B00C338EE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2BULHRS882;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A24EB11E65F54B00C338EE /* SecondViewController.swift in Sources */,
+				10A24EC11E660D7D00C338EE /* TableViewCell.swift in Sources */,
 				10A24EAD1E65F54B00C338EE /* AppDelegate.swift in Sources */,
 				10A24EAF1E65F54B00C338EE /* FirstViewController.swift in Sources */,
 			);
@@ -262,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = "HomeFeature Tab/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.assignment2.HomeFeature-Tab";
@@ -274,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = "HomeFeature Tab/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.assignment2.HomeFeature-Tab";
