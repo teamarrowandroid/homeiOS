@@ -15,6 +15,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var voiceButton: UIButton!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,6 +31,7 @@ class TableViewCell: UITableViewCell {
 
     @IBAction func likeButtonChange(_ sender: UIButton) {
         toggle(button: sender, onImage: #imageLiteral(resourceName: "likep"), ofImage: #imageLiteral(resourceName: "likeb"))
+        
     }
     
     @IBAction func commentButtonChnge(_ sender: UIButton) {
@@ -46,9 +48,19 @@ class TableViewCell: UITableViewCell {
     {
         if(button.currentImage==ofImage)
         {
-            button.setImage(onImage, for: .normal)
+            button.transform = CGAffineTransform(rotationAngle: 45)
+            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 9, options: .allowUserInteraction, animations:
+                {
+                    button.transform=CGAffineTransform.identity
+            }, completion: nil)
+             button.setImage(onImage, for: .normal)
         }
         else{
+            button.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 9, options: .allowUserInteraction, animations:
+                {
+                    button.transform=CGAffineTransform.identity
+            }, completion: nil)
             button.setImage(ofImage, for: .normal)
         }
     }
